@@ -10,7 +10,7 @@ public class Main {
         Random random = new Random();
 
         String computerChoice;
-        String playAgain = "Yes";
+        String playAgain = "yes";
         int playerWins = 0;
         int computerWins = 0;
         int playerStreak = 0;
@@ -29,6 +29,8 @@ public class Main {
         !playerChoice.equals(MoveType.PAPER.toString()) &&
         !playerChoice.equals(MoveType.SCISSORS.toString())) {
             System.out.print("Please enter a valid move type. The available types are: Rock, Paper and Scissors.");
+            continue;
+
         }
 
         computerChoice = String.valueOf(MoveType.moveTypes[random.nextInt(3)]);
@@ -77,7 +79,7 @@ public class Main {
 
         } while (playAgain.equals("yes"));
 
-        System.out.print("Thank you for playing! Have a nice day! :)");
+        System.out.print("\nThank you for playing! Have a nice day! :)");
 
 
         scanner.close();
