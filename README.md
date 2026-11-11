@@ -12,6 +12,7 @@ A random opponent: the computer picks its move at random every round
 Live scoreboard: player and computer wins are shown after every round
 Win and loss streaks: win 3 or more rounds in a row and the game hypes you up. Lose 3 or more in a row and it lets you know you're down bad 😅
 Play as long as you like: after each round, answer yes to keep going or no to stop
+
 🕹️ How to Play
 Run the game
 Enter your name
