@@ -68,10 +68,6 @@ javac -d build src/*.java
 java -cp build Main
 ```
 
-**Want to build your own `.jar` too?** After compiling, run:
-```bash
-jar cfe RockPaperScissors.jar Main -C build .
-```
 
 ### Option 3: IntelliJ IDEA
 
@@ -99,12 +95,3 @@ RockPaperScissors/
 - `do-while` loops for the "play again?" flow
 - Conditional logic with `if` / `else if` / `else` and combined conditions (`&&`, `||`)
 - Tracking game state with counters (scores and streaks)
-
----
-
-## 💡 Ideas for the Future
-
-- A "best of 3 / best of 5" match mode
-- Rock, Paper, Scissors, **Lizard, Spock** 🦎🖖
-- Final stats at the end (win rate, longest streak)
-- A graphical version
