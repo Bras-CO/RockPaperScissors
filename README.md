@@ -27,9 +27,9 @@ This is the first game I've ever built. It's simple, but it was fun and fast to 
 5. Type `yes` to play another round, or `no` to quit
 
 **The rules:**
-- 🪨 Rock beats ✂️ Scissors
+- ✊ Rock beats ✂️ Scissors
 - ✂️ Scissors beats 📄 Paper
-- 📄 Paper beats 🪨 Rock
+- 📄 Paper beats ✊ Rock
 - Same move = tie
 
 **Streaks:** a win adds to your streak and resets the computer's. A loss does the opposite. A tie resets both.
