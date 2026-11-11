@@ -16,13 +16,13 @@ public class Main {
         int playerStreak = 0;
         int computerStreak = 0;
 
-        System.out.print("Welcome to the Rock, Paper, Scissors! What is your name?");
+        System.out.print("Welcome to the Rock, Paper, Scissors! What is your name? ");
         String playerName = scanner.nextLine();
-        System.out.print("Welcome " + playerName + " to the Rock, Paper, Scissors DUEL!");
+        System.out.print("Welcome " + playerName + " to the Rock, Paper, Scissors DUEL! ");
 
         do {
 
-        System.out.print("Choose your move: (Rock, Paper, Scissors)");
+        System.out.print("\nChoose your move: (Rock, Paper, Scissors) ");
         String playerChoice = scanner.nextLine().toUpperCase();
 
         if (!playerChoice.equals(MoveType.ROCK.toString()) &&
@@ -37,9 +37,10 @@ public class Main {
         System.out.print("\nComputer chooses: " + computerChoice);
 
         if (playerChoice.equals(computerChoice)) {
-            System.out.print("It's a tie! Try again? (Yes/No)");
-            System.out.print("Player wins: " + playerWins);
-            System.out.print("Computer wins: " + computerWins);
+            System.out.print("\nIt's a tie! ");
+            System.out.print("\nPlayer wins: " + playerWins);
+            System.out.print("\nComputer wins: " + computerWins);
+            System.out.println("\nTry again? (Yes/No) ");
             playAgain = scanner.nextLine().toLowerCase();
             playerStreak = 0;
             computerStreak = 0;
@@ -48,19 +49,21 @@ public class Main {
                      playerChoice.equals(MoveType.PAPER.toString()) && computerChoice.equals(MoveType.SCISSORS.toString()) ||
                      playerChoice.equals(MoveType.SCISSORS.toString()) && computerChoice.equals(MoveType.ROCK.toString())) {
             computerWins++;
-            System.out.print("You lost, computer wins! Try again? (Yes/No)");
+            System.out.print("\nYou lost, computer wins!");
             computerStreak++;
-            System.out.print("Player wins: " + playerWins);
-            System.out.print("Computer wins: " + computerWins);
+            System.out.print("\nPlayer wins: " + playerWins);
+            System.out.print("\nComputer wins: " + computerWins);
+            System.out.println("\nTry again? (Yes/No) ");
             playAgain = scanner.nextLine().toLowerCase();
             playerStreak = 0;
 
         }   else {
-            System.out.print("You win! Try again? (Yes/No)");
+            System.out.print("\nYou win! ");
             playerWins++;
             playerStreak++;
-            System.out.print("Player wins: " + playerWins);
-            System.out.print("Computer wins: " + computerWins);
+            System.out.print("\nPlayer wins: " + playerWins);
+            System.out.print("\nComputer wins: " + computerWins);
+            System.out.println("\nTry again? (Yes/No) ");
             playAgain = scanner.nextLine().toLowerCase();
             computerStreak = 0;
         }
